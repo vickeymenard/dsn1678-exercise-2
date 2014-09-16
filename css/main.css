@@ -1,0 +1,126 @@
+html {
+  margin: 0;
+  padding: 0;
+
+  background-color: #6b6e80;
+  box-sizing: border-box;
+
+  color: #fff;
+  font: normal 100%/1.5 sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+.clearfix::after {
+  clear: both;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 50em;
+}
+
+.masthead {
+  background-color: #8a8d9e;
+}
+
+.title {
+  margin: 0;
+  padding: 1em 0;
+
+  font-weight: normal;
+  text-align: center;
+}
+
+.chart {
+  margin: 1.5 0;
+  padding: 0 0 2em;
+
+  list-style-type: none;
+}
+
+.chart__item {
+  float: left;
+  height: 16em;
+  margin: 0 0.5%;
+  position: relative;
+  width: 7.3%;
+
+  background-color: rgba(204, 204, 204, 0);
+}
+
+.chart__link,
+.chart__link:link,
+.chart__link:visited {
+  display: block;
+
+  color: #e2e2e2;
+  text-decoration: none;
+}
+
+.chart__label {
+  bottom: -1.7em;
+  position: absolute;
+  width: 100%;
+
+  text-align: center;
+}
+
+.chart__bar-wrap {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.chart__bar {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  background-color: rgba(127, 219, 255, 0.6);
+}
+
+.chart__count {
+  display: inline-block;
+  left: -2.3em;
+  margin: 0 0 0 50%;
+  padding: 0.5em;
+  position: absolute;
+  top: -2em;
+  width: 4.6em;
+  z-index: 1;
+
+  background-color: #000;
+  border-radius: 6px;
+  opacity: 0;
+
+  text-align: center;
+}
+
+.chart__count::after {
+  bottom: -10px;
+  content: " ";
+  height: 0;
+  left: -10px;
+  margin-left: 50%;
+  position: absolute;
+  width: 0;
+
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #000;
+}
